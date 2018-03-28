@@ -1,0 +1,13 @@
+{
+    "name": "BitcoiinWallet",
+    "version": "3.9.9.3",
+    "description": "An NPM dist of BitcoiinWallet. For easier downloading & updating via CLI.",
+    "author": "BitcoiinWallet",
+    "license": "ISC",
+    "devDependencies": {
+        "open": "0.0.5"
+    },
+    "bin": {
+        "mew": "bin/startMEW.js"
+    }
+}
