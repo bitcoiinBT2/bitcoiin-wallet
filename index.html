@@ -618,7 +618,7 @@
               <!-- / Amount to Send -->
 
               <!-- Gas Limit -->
-              <div class="row form-group">
+              <!-- <div class="row form-group">
                 <div class="col-sm-11 clearfix">
                   <a class="account-help-icon" href="#" target="_blank" rel="noopener">
                     <img src="images/icon-help.svg" class="help-icon" />
@@ -628,17 +628,17 @@
                   <input type="text" class="form-control" placeholder="21000" ng-model="tx.gasLimit" ng-change="gasLimitChanged=true" ng-disabled="tx.readOnly || checkTxReadOnly"
                     ng-class="Validator.isPositiveNumber(tx.gasLimit) ? 'is-valid' : 'is-invalid'" />
                 </div>
-              </div>
+              </div> -->
               <!-- / Gas Limit -->
 
               <!-- Advanced Option Panel -->
-              <a ng-click="showAdvance=true" ng-show='globalService.currentTab==globalService.tabs.sendTransaction.id'>
+              <!-- <a ng-click="showAdvance=true" ng-show='globalService.currentTab==globalService.tabs.sendTransaction.id'>
                 <p class="strong" translate="TRANS_advanced"> + Advanced: Add Data </p>
-              </a>
+              </a> -->
 
               <section ng-show="showAdvance || checkTxPage">
                 <!-- Data -->
-                <div class="row form-group">
+                <!-- <div class="row form-group">
                   <div class="col-sm-11 clearfix" ng-show="tx.sendMode=='ether'">
                     <span class="account-help-icon">
                       <img src="images/icon-help.svg" class="help-icon" />
@@ -649,7 +649,7 @@
                       ng-disabled="tx.readOnly || checkTxReadOnly" ng-class="Validator.isValidHex(tx.data) ? 'is-valid' : 'is-invalid'"
                     />
                   </div>
-                </div>
+                </div> -->
                 <!-- / Data -->
 
 
