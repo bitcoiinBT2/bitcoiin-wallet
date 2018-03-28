@@ -3199,12 +3199,12 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                 <tr>
                   <td translate="OFFLINE_Step2_Label_1">To Address</td>
                   <td>
-                    <a href="https://etherscan.io/address/{{ txInfo.to }}" target="_blank" rel="noopener"> {{ txInfo.to }} </a>
+                    <a href="#" target="_blank" rel="noopener"> {{ txInfo.to }} </a>
                   </td>
                 </tr>
                 <tr>
                   <td translate="SEND_amount_short">Amount</td>
-                  <td>{{ txInfo.valueStr }} </td>
+                  <td>{{ txInfo.valueStr }}</td>
                 </tr>
                 <tr>
                   <td>
@@ -3235,8 +3235,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                     <span translate="OFFLINE_Step2_Label_3">Gas Price</span>
                   </td>
                   <td>
-                    {{ txInfo.gasPrice.gwei }} GWEI
-                    <small>({{ txInfo.gasPrice.wei }} WEI)</small>
+                    {{ txInfo.gasPrice.gwei }} GGEN
+                    <small>({{ txInfo.gasPrice.wei }} GEN)</small>
                   </td>
                 </tr>
                 <!--
@@ -3254,10 +3254,10 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
           </td>
         </tr>
 -->
-                <tr>
+                <!-- <tr>
                   <td translate="OFFLINE_Step2_Label_6">Data</td>
                   <td>{{ txInfo.data }} </td>
-                </tr>
+                </tr> -->
               </tbody>
             </table>
           </div>
