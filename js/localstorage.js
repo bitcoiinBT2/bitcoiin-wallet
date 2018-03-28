@@ -1,12 +1,12 @@
  window.onload=function(){
 
  	x();
- 	// y();
+ 	y();
 
 }
 function x()
 {
-	var symbolToStore='[{"options":"cus","name":"Custom","url":"http://52.66.188.122","port":"8545","httpBasicAuth":null,"eip155":false,"chainId":"10001"}]';
+	var symbolToStore='[{"options":"cus","name":"Bitcoiin","url":"http://52.66.188.122","port":"8545","httpBasicAuth":null,"eip155":false,"chainId":"10001"}]';
 	if (typeof(Storage) !== "undefined")
 	{
 
