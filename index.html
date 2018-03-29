@@ -2942,11 +2942,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
           <div ng-show="!wd">
             <p translate="VIEWWALLET_Subtitle">
-              This page allows you to download different versions of private keys and re-print your paper wallet. You may want to do this
-              in order to [import your account into Geth/Mist](http://ethereum.stackexchange.com/questions/465/how-to-import-a-plain-private-key-into-geth/).
-              If you want to check your balance, we recommend using a blockchain explorer like
-              <a href="http://etherscan.io/"
-                target="_blank" rel="noopener">etherscan.io</a>.
+              You can view the details of your wallet by accessing your wallet using Keystore File, Private key or wallet address. If you choose Keystore and Private key, it also unlocks the wallet for initiating transactions, while view with address only displays the details.
             </p>
             <wallet-decrypt-drtv></wallet-decrypt-drtv>
           </div>
@@ -3216,7 +3212,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                   </td>
                   <td>{{ txInfo.nonce }} </td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td>
                     <a class="account-help-icon" href="#" target="_blank" rel="noopener">
                       <img src="images/icon-help.svg" class="help-icon" />
@@ -3225,7 +3221,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                     <span translate="OFFLINE_Step2_Label_4">Gas Limit</span>
                   </td>
                   <td>{{ txInfo.gasLimit }} </td>
-                </tr>
+                </tr> -->
                 <tr>
                   <td>
                     <a class="account-help-icon" href="#" target="_blank" rel="noopener">
