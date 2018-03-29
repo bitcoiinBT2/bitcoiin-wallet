@@ -762,11 +762,11 @@
 
                         <td ng-show="tx.sendMode=='ether'" class="mono">->
                           <br />
-                          <h4 class="text-danger">{{tx.value}} {{unitReadable}}</h4>
+                          <h4 class="text-danger">{{tx.value}} B2G<!-- {{unitReadable}} --></h4>
                         </td>
                         <td ng-show="tx.sendMode!=='ether'" class="mono">->
                           <br />
-                          <h4 class="text-danger">{{tx.value}} {{unitReadable}}</h4>
+                          <h4 class="text-danger">{{tx.value}} B2G<!-- {{unitReadable}} --></h4>
                         </td>
 
                         <td ng-show="tx.sendMode=='ether'">
@@ -784,8 +784,8 @@
 
                   <p>
                     <span translate="SENDModal_Content_1">You are about to send</span>
-                    <strong ng-show="tx.sendMode=='ether'" class="mono">{{tx.value}} {{unitReadable}}</strong>
-                    <strong ng-show="tx.sendMode!=='ether'" class="mono">{{tokenTx.value}} {{unitReadable}}</strong>
+                    <strong ng-show="tx.sendMode=='ether'" class="mono">{{tx.value}} B2G<!-- {{unitReadable}} --></strong>
+                    <strong ng-show="tx.sendMode!=='ether'" class="mono">{{tokenTx.value}} B2G<!-- {{unitReadable}} --></strong>
                     <br />
                     <span translate="SENDModal_Content_2">to address</span>
                     <strong ng-show="tx.sendMode=='ether'" class="mono"> {{tx.to}}. </strong>
@@ -793,7 +793,7 @@
                   </p>
 
                   <p> You are interacting with the
-                    <strong>{{ajaxReq.type}} chain</strong>, provided by
+                    <strong><!-- {{ajaxReq.type}} -->BITCOIIN chain</strong>, provided by
                     <strong>{{ajaxReq.service}}</strong>.</p>
 
                   <h4 translate="SENDModal_Content_3"> Are you sure you want to do this? </h4>
@@ -3161,7 +3161,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
             <ul>
               <li translate="tx_notFound_2"></li>
               <li translate="tx_notFound_3"></li>
-              <li translate="tx_notFound_4"></li>
+              <!-- <li translate="tx_notFound_4"></li> -->
             </ul>
           </div>
 
@@ -3470,11 +3470,11 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
                           <td ng-show="tx.sendMode=='ether'" class="mono">->
                             <br />
-                            <h4 class="text-danger">{{tx.value}} {{unitReadable}}</h4>
+                            <h4 class="text-danger">{{tx.value}} B2G<!-- {{unitReadable}} --></h4>
                           </td>
                           <td ng-show="tx.sendMode!=='ether'" class="mono">->
                             <br />
-                            <h4 class="text-danger">{{tx.value}} {{unitReadable}}</h4>
+                            <h4 class="text-danger">{{tx.value}} B2G<!-- {{unitReadable}} --></h4>
                           </td>
 
                           <td ng-show="tx.sendMode=='ether'">
@@ -3492,8 +3492,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
                     <p>
                       <span translate="SENDModal_Content_1">You are about to send</span>
-                      <strong ng-show="tx.sendMode=='ether'" class="mono">{{tx.value}} {{unitReadable}}</strong>
-                      <strong ng-show="tx.sendMode!=='ether'" class="mono">{{tokenTx.value}} {{unitReadable}}</strong>
+                      <strong ng-show="tx.sendMode=='ether'" class="mono">{{tx.value}} B2G<!-- {{unitReadable}} --></strong>
+                      <strong ng-show="tx.sendMode!=='ether'" class="mono">{{tokenTx.value}} B2G<!-- {{unitReadable}} --></strong>
                       <br />
                       <span translate="SENDModal_Content_2">to address</span>
                       <strong ng-show="tx.sendMode=='ether'" class="mono"> {{tx.to}}. </strong>
