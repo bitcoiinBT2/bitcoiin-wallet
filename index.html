@@ -3183,26 +3183,26 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                 <tr>
                   <td translate="x_TxHash">TX Hash</td>
                   <td>
-                    <a href="https://etherscan.io/tx/{{ txInfo.hash }}" target="_blank" rel="noopener"> {{ txInfo.hash }} </a>
+                    {{ txInfo.hash }}
                   </td>
                 </tr>
                 <tr>
                   <td translate="OFFLINE_Step1_Label_1">From Address</td>
                   <td>
-                    <a href="https://etherscan.io/address/{{ txInfo.from }}" target="_blank" rel="noopener"> {{ txInfo.from }} </a>
+                    {{ txInfo.from }}
                   </td>
                 </tr>
                 <tr>
                   <td translate="OFFLINE_Step2_Label_1">To Address</td>
                   <td>
-                    <a href="#" target="_blank" rel="noopener"> {{ txInfo.to }} </a>
+                    {{ txInfo.to }}
                   </td>
                 </tr>
                 <tr>
                   <td translate="SEND_amount_short">Amount</td>
                   <td>{{ txInfo.valueStr }}</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td>
                     <a class="account-help-icon" href="#" target="_blank" rel="noopener">
                       <img src="images/icon-help.svg" class="help-icon" />
@@ -3211,7 +3211,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                     <span translate="OFFLINE_Step2_Label_5">Nonce</span>
                   </td>
                   <td>{{ txInfo.nonce }} </td>
-                </tr>
+                </tr> -->
                 <!-- <tr>
                   <td>
                     <a class="account-help-icon" href="#" target="_blank" rel="noopener">
@@ -3222,7 +3222,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                   </td>
                   <td>{{ txInfo.gasLimit }} </td>
                 </tr> -->
-                <tr>
+                <!-- <tr>
                   <td>
                     <a class="account-help-icon" href="#" target="_blank" rel="noopener">
                       <img src="images/icon-help.svg" class="help-icon" />
@@ -3234,7 +3234,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                     {{ txInfo.gasPrice.gwei }} GGEN
                     <small>({{ txInfo.gasPrice.wei }} GEN)</small>
                   </td>
-                </tr>
+                </tr> -->
                 <!--
         <tr>
           <td>
