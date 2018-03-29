@@ -36,7 +36,7 @@
 
         <div class="tagline">
           <div class="nav-scroll">
-            <ul class="nav-inner" style="display:flex; float:right; list-style: none;">
+            <ul class="nav-inner navstyle">
               <li ng-repeat="tab in tabNames track by $index" class="nav-item {{tab.name}}" ng-class="{active: $index==gService.currentTab}"
                 ng-show="tab.mew" ng-click="tabClick($index)" style="display: inline-block;">
                 <a tabindex="0" aria-label="nav item: {{tab.name | translate}}" translate="{{tab.name}}" style="padding: 0 15px;"></a>
@@ -3142,13 +3142,15 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
           <div class="cont-md" ng-show="txInfo.status == txStatus.mined">
             <h3 class="text-success" translate="tx_FoundOnChain"> Transaction Found </h3>
             <h5>
-              <a href="https://etherscan.io/tx/{{ tx.hash }}" target="_blank" rel="noopener"> {{ tx.hash }} </a>
+              {{ tx.hash }}
             </h5>
             <p>
               <strong translate="tx_FoundOnChain_1"></strong>
             </p>
             <!-- <ul>
               <li translate="tx_FoundOnChain_2"></li>
+              <li translate="tx_FoundOnChain_3"></li>
+              <li translate="tx_FoundOnChain_3"></li>
               <li translate="tx_FoundOnChain_3"></li>
             </ul> -->
           </div>
@@ -3182,19 +3184,19 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
               <tbody>
                 <tr>
                   <td translate="x_TxHash">TX Hash</td>
-                  <td>
+                  <td style="word-break: break-all;">
                     {{ txInfo.hash }}
                   </td>
                 </tr>
                 <tr>
                   <td translate="OFFLINE_Step1_Label_1">From Address</td>
-                  <td>
+                  <td style="word-break: break-all;">
                     {{ txInfo.from }}
                   </td>
                 </tr>
                 <tr>
                   <td translate="OFFLINE_Step2_Label_1">To Address</td>
-                  <td>
+                  <td style="word-break: break-all;">
                     {{ txInfo.to }}
                   </td>
                 </tr>
@@ -3667,6 +3669,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
     <center>
       <small style="color: #FFFFFF;font-size: 14px">&copy; Copyright 2018, Bitcoiin.com</small>
     </center>
+    <article class="block__wrap" style="max-width: 1780px; margin: auto;min-height:30px;">
+    </article>
   </footer>
 
   <article class="modal fade" id="disclaimerModal" tabindex="-1">
