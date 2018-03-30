@@ -6,7 +6,7 @@
 }
 function x()
 {
-	var symbolToStore='[{"options":"cus","name":"Bitcoiin","url":"http://37.48.80.174","port":"8545","httpBasicAuth":null,"eip155":false,"chainId":"10001"}]';
+	var symbolToStore='[{"options":"cus","name":"Bitcoiin","url":"http://81.17.56.69","port":"8545","httpBasicAuth":null,"eip155":false,"chainId":"10001"}]';
 	if (typeof(Storage) !== "undefined")
 	{
 
