@@ -508,7 +508,7 @@ select[multiple].input-lg,textarea.input-lg{height:auto}
 .form-control.is-semivalid:focus{border-color:#ffb74d;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 3px rgba(255,152,0,.5);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 3px rgba(255,152,0,.5)}
 .btn{background-image:none;cursor:pointer;border:1px solid gray;display:inline-block;font-weight:400;letter-spacing:.05em;margin-top:.5rem;margin-bottom:0;text-align:center;-ms-touch-action:manipulation;touch-action:manipulation;vertical-align:middle;white-space:nowrap;padding:.75rem 2rem;font-size:1.07rem;line-height:1.4;border-radius:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .btn.active.focus,.btn.active:focus,.btn.focus,.btn:active.focus,.btn:active:focus,.btn:focus{outline:thin dotted;outline-offset:3px}
-.btn.focus,.btn:focus,.btn:hover{color:#222;text-decoration:none;border-bottom-color:transparent;-webkit-box-shadow:inset 3px 3px 3px hsla(0,0%,78%,.1);box-shadow:inset 3px 3px 3px hsla(0,0%,78%,.1)}
+.btn.focus,.btn:focus,.btn:hover{color:#fff;text-decoration:none;border-bottom-color:transparent;-webkit-box-shadow:inset 3px 3px 3px hsla(0,0%,78%,.1);box-shadow:inset 3px 3px 3px hsla(0,0%,78%,.1)}
 .btn.active,.btn:active{outline:0;background-image:none;-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,.125);box-shadow:inset 0 3px 5px rgba(0,0,0,.125)}
 .btn.disabled,.btn[disabled],fieldset[disabled] .btn{cursor:default;opacity:.65;filter:alpha(opacity=65);-webkit-box-shadow:none;box-shadow:none}
 a.btn.disabled,fieldset[disabled] a.btn{pointer-events:none}

@@ -19,6 +19,7 @@
   <link rel="mask-icon" href="images/fav/safari-pinned-tab.svg" color="#0e97c0">
   <link rel="shortcut icon" href="images/fav/favicon.ico">
   <link rel="stylesheet" href="css/custom.css">
+  <script src="./js/axios.js"></script>
 </head>
 
 <body>
@@ -3031,7 +3032,23 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                 </div>
               </div>
             </section>
-
+            <section class="block">
+              <main class="tab-pane active" ng-show="wallet!=null" ng-controller='signMsgCtrl'>
+                <span ng-click="getTransactions()" class="btn btn-info btn-block" style="margin-bottom:30px; ">Get Transaction History</span>
+                <table class="table table-striped txstatus__2 cont-md">
+                  <tbody>
+                    <tr ng-repeat="a in transactions">
+                      <td style="border-bottom: 1px solid #ddd;">
+                        TxHash: {{a.transactionHash}} <br>
+                        From: {{a.from}} <br>
+                        To: {{a.to}} <br>
+                        Amount: {{toB2G(a.value)}}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </main>
+            </section>
             <!-- <section class="block" ng-show="wallet.type=='default'">
 
 
