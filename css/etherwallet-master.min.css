@@ -1216,3 +1216,8 @@ border-bottom: 5px solid #ffb100;
     list-style: none;
  	}
  }
+@media screen and (max-width: 410px) {
+	.btsize {
+		font-size:14px;
+	}
+}
