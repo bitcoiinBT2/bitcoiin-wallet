@@ -3052,7 +3052,11 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                     <p>Total transactions: {{total}})</p>
                     <div class="col-md-12" style="text-align: center;">
                       <ul class="pagination pagination-sm">
-                        <li ng-repeat="n in [].constructor(totalPage) track by $index"><a class="btn btn-default" ng-click="changePage($index + 1)">{{ $index + 1 }}</a></li>
+                        <li><a class="btn btn-default {{( page == 1)?'disabled':''}}" ng-click="changePage(1)">First</a></li>
+                        <li><a class="btn btn-default {{( page == 1)?'disabled':''}}" ng-click="changePage(page - 1)">Previous</a></li>
+                        <li ng-repeat="n in [].constructor(totalPage) track by $index" ng-if="($index >= page - 2)&&($index <= page + 2)"><a class="btn btn-default" ng-click="changePage($index + 1)">{{ $index + 1 }}</a></li>
+                        <li><a class="btn btn-default {{( page+1 > totalPage)?'disabled':''}}" ng-click="changePage(page + 1)">Next</a></li>
+                        <li><a class="btn btn-default {{( page == totalPage)?'disabled':''}}" ng-click="changePage(totalPage)">Last</a></li>
                       </ul>
                     </div>
                     <div class="col-md-12">
