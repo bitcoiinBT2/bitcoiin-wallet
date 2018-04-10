@@ -3048,6 +3048,17 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                       </tr>
                     </tbody>
                   </table>
+                  <div ng-if="transactions.length > 0">
+                    <p>Total transactions: {{total}})</p>
+                    <div class="col-md-12" style="text-align: center;">
+                      <ul class="pagination pagination-sm">
+                        <li ng-repeat="n in [].constructor(totalPage) track by $index"><a class="btn btn-default" ng-click="changePage($index + 1)">{{ $index + 1 }}</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-12">
+                      <p style="text-align:center;">Showing page {{page}} of {{totalPage}}</p>
+                    </div>
+                  </div>
                 </div>
               </main>
             </section>
